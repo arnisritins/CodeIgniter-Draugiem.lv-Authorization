@@ -10,7 +10,7 @@ class Draugiem
 {
 
 
-    private $app_id; // Application ID
+	private $app_id; // Application ID
 	private $app_key; // Application key
 	private $app_url; // Application URL for redirect
 	

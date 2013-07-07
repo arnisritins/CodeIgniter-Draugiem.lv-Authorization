@@ -1,5 +1,5 @@
-CodeIgniter Draugiem.lv Authorization Class
-===========================================
+CodeIgniter Draugiem.lv Authorization
+=====================================
 
 Simple CodeIgniter library that helps to implement authorization system via Draugiem.lv
 
@@ -12,7 +12,7 @@ Move Draugiem.php file to your CodeIgniter application folder **.application/lib
 
 
 
-### 2. Update config values:
+### 2. Set config values:
 Then open **.application/config/config.php** and update these options:
 
 Set your own encryption key (required for CodeIgniter session library):
@@ -23,6 +23,11 @@ $config['encryption_key'] = '1234abcd';
 Set this option TRUE, in order to logout, when user closes browser:
  ```php
 $config['sess_expire_on_close'] = TRUE;
+ ```
+
+Also, if you are using cookie sessions, it is better to encrypt them:
+ ```php
+$config['sess_encrypt_cookie'] = TRUE;
  ```
 
 
